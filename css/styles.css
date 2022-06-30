@@ -1,50 +1,209 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+/* Set up generic properties for the page */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Roboto', sans-serif;
+
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 300;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #81a7f8;
+
+    --fs-h1: 3rem;
+    --f2-h2: 2.25rem;
+    --f2-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: white;
+    color: black;
+    margin: 0;
+    font-size: var(--fs-body);
+    line-height: 1;
+}
+
+section {
+    padding: 1em;
+}
+
+img {
+    width: 100%;
+}
+
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+
+.intro-image {
+    border-radius: 2%;
+}
+
+/* Navbar */
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
-    margin: 15px;
-    padding: 25px;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5vw;
+    padding: 2rem;
+    padding-bottom: 0;
 }
 
 .link {
-    font-family: "Open Sans", sans-serif;
     text-decoration: none;
-    font-size: 30px;
-    color: #f8f8ff;
+    font-size: 20px;
     border-radius: 25px;
+    color: black;
+    font-weight: var(--fw-reg);
 }
 
-.flex-container {
-    display: flex;
-    margin: 50px;
-    padding: 50px;
-    gap: 50px;
-    align-items: center;
+.intro {
+    padding-bottom: 0;
 }
 
-.image {
-    height: 400px;
-    width: auto;
-    border-radius: 25px;
+.about {
+    padding-bottom: 0;
 }
 
-.root {
-    background-color: #265077;
+.section-title {
+    margin-bottom: .25em;
+}
+
+.section-title-intro {
+    font-weight: var(--fw-reg);
+}
+
+.section-title-intro strong {
+    display: block;
+}
+
+.section-subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.my-work {
+    padding-top: 0;
+}
+
+.section-subtitle-intro,
+.section-subtitle-about {
+    background: var(--clr-accent);
+    padding: .25em 1em;
+    left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.section-subtitle-about {
+    margin-top: 0;
+    padding-top: 0;
+}
+.intro {
+    padding-top: 0;
+}
+
+.portfolio {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
 
-.flex-container {
-    background-color: #f8f8ff;
-    border-radius: 25px;
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.about-me {
-    color: #265077;
-    font-family: "Open Sans", sans-serif;
-    font-size: 30px;
-    text-align: center;
+.portfolio-item-title {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.portfolio-image {
+    width: 75%;
+    height: auto;
+    padding: 2px;
+    border: 2px solid var(--clr-accent);
+    border-radius: 10px;
+}
+
+/* Media query for when there is at least 600px of width */
+@media (min-width: 600px) {
+
+    .header-container {
+        margin-bottom: 2em;
+        justify-content: center;
+        gap: 5vw;
+    }
+
+    .link {
+        font-size: 1.25em;
+    }
+
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro-image {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        border-radius: 50%;
+    }
+
+    .section-subtitle-intro {
+        align-self: center;
+        grid-column: -1/1;
+        grid-row: 2;
+        text-align: right;
+        width: 100%;
+        margin-left: 2em;
+    }
+
+    .services {
+        background-color: var(--clr-dark);
+        background-image: url();
+        background-size: cover;
+        color: var(--clr-light);
+        text-align: center;
+    }
+}
+
+/* Change the font size whenever width gets large */
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --f2-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
 }

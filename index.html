@@ -2,23 +2,56 @@
 <html lang="en">
     <head>
         <title>Steven Jarmell</title>
-        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="./images/pitt_logo.ico">
         <link rel="stylesheet" href="./css/styles.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body class="root">
-        <div class="header-container">
-            <a href="https://github.com/Steven-Jarmell" target=”_blank” class="link">GitHub</a>
+		<!-- Navbar -->
+        <nav class="header-container">
+            <a href="https://github.com/Steven-Jarmell" target="_blank" class="link">GitHub</a>
             <a href="https://drive.google.com/file/d/1OGKCWdj-PvzhJbTBsobV9B0Qen8D_ZFh/view?usp=sharing" target=”_blank” class="link">Resume</a>
-            <a href="https://www.linkedin.com/in/~steven" target=”_blank” class="link">LinkedIn</a>
-            <a href="mailto: jarmellsteve@yahoo.com" target=”_blank” class="link">Email</a>
-        </div>
-        <div class="flex-container">
-            <img class="image" src = "./images/picture_of_me.jpg">
-            <div class="about-me">
-                <p>
-                    Hi, my name is Steven Jarmell and I am a rising Junior at the University of Pittsburgh.
-                </p>
-            </div>
-        </div>
+            <a href="https://www.linkedin.com/in/~steven" target="_blank" class="link">LinkedIn</a>
+            <a href="mailto: jarmellsteve@yahoo.com" target="_blank" class="link">Email</a>
+		</nav>
+        <!-- Introduction -->
+		<section class ="intro" id ="home">
+			<h1 class = "section-title section-title-intro">
+				<strong>Steven Jarmell</strong>
+			</h1>
+			<p class = "section-subtitle section-subtitle-intro">
+				software developer
+			</p>
+			<img src ="images/picture_of_me.jpg" alt = "Picture of Myself" class="intro-image">
+		</section>
+		<!-- About -->
+		<section class = "about" id="about">
+			<h2 class = "section-title section-title-about">About Me</h2>
+			<p class="section-subtitle section-subtitle-about"></p>
+			<div class = "about-info">
+				<p>Hi, my name is Steven Jarmell and I am a rising Junior at the University of Pittsburgh. Next year, I will be a Software Engineer Intern at Leidos from June to December.</p>
+				<p>Currently, I am learning full stack web-development by working through The Odin Project's curriculum.</p>
+			</div>
+		</section>
+		<!-- My Work-->
+		<section class = "my-work" id = "work">
+			<h2 class = "section-title section-title-work">My Work</h2>
+			<p class="section-subtitle section-subtitle-about"></p>
+			<div class="portfolio">
+				<div class = "portfolio-item">
+					<a href="https://steven-jarmell.github.io/restaurant-page/" class="portfolio-item-title"><span class="material-symbols-outlined">open_in_new</span>Restaurant Website</a>
+					<img src="./images/big-bens-bbq.png" alt="Big Bens BBQ Screenshot" class = "portfolio-image">
+					<p>Technology Used: HTML, CSS, JavaScript, Webpack</p>
+				</div>
+				<div class = "portfolio-item">
+					<a href="https://github.com/Steven-Jarmell/CS0010-FinalProject" class="portfolio-item-title"><span class="material-symbols-outlined">open_in_new</span>Best NeighborHood in Pittsburgh</a>
+					<img src="./images/cs10-map.png" alt="Final Neighborhood Map Screenshot" class = "portfolio-image">
+					<p>Technology Used: Python, Pandas, NumPy, GeoPandas</p>
+				</div>
+			</div>
+		</section>
     </body>
 </html>
