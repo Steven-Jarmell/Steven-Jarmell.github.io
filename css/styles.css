@@ -10,13 +10,11 @@
 :root {
     font-family: 'Roboto', sans-serif;
 
-    --ff-secondary: 'Source Code Pro', monospace;
-
     --fw-reg: 300;
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #81a7f8;
+    --clr-accent: #0080FF;
 
     --fs-h1: 3rem;
     --f2-h2: 2.25rem;
@@ -30,7 +28,7 @@ body, html {
 }
 
 body {
-    background: white;
+    background: clr(--clr-light);
     color: black;
     margin: 0;
     font-size: var(--fs-body);
@@ -67,9 +65,13 @@ h3 { font-size: var(--fs-h3) }
 .link {
     text-decoration: none;
     font-size: 20px;
-    border-radius: 25px;
     color: black;
     font-weight: var(--fw-reg);
+}
+
+.link:hover {
+    border-bottom: 2px solid var(--clr-accent);
+    padding-bottom: 2px;
 }
 
 .intro {
@@ -191,8 +193,6 @@ h3 { font-size: var(--fs-h3) }
 
     .services {
         background-color: var(--clr-dark);
-        background-image: url();
-        background-size: cover;
         color: var(--clr-light);
         text-align: center;
     }
