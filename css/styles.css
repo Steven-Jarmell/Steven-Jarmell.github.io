@@ -54,9 +54,7 @@ h3 { font-size: var(--fs-h3) }
 /* Navbar */
 .header-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
     gap: 5vw;
     padding: 2rem;
     padding-bottom: 0;
