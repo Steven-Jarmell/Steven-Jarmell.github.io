@@ -195,6 +195,14 @@ h3 { font-size: var(--fs-h3) }
         color: var(--clr-white);
         text-align: center;
     }
+
+    .portfolio-image {
+        width: 60%;
+    }
+
+    .big-bens-image {
+        width: 100%
+    }
 }
 
 /* Change the font size whenever width gets large */
@@ -215,6 +223,10 @@ h3 { font-size: var(--fs-h3) }
     }
 
     .portfolio-image {
-        width: 60%;
+        width: 70%;
+    }
+
+    .big-bens-image {
+        width: 100%
     }
 }
