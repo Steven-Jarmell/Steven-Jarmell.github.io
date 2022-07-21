@@ -12,7 +12,7 @@
 
     --fw-reg: 300;
 
-    --clr-light: #fff;
+    --clr-white: #fff;
     --clr-dark: #303030;
     --clr-accent: #0080FF;
 
@@ -28,7 +28,7 @@ body, html {
 }
 
 body {
-    background: clr(--clr-light);
+    background: clr(--clr-white);
     color: black;
     margin: 0;
     font-size: var(--fs-body);
@@ -67,11 +67,12 @@ h3 { font-size: var(--fs-h3) }
     font-size: 20px;
     color: black;
     font-weight: var(--fw-reg);
+    border: 3px solid transparent;
+    display: block;
 }
 
 .link:hover {
-    border-bottom: 2px solid var(--clr-accent);
-    padding-bottom: 2px;
+    border-bottom: 3px solid var(--clr-accent);
 }
 
 .intro {
@@ -185,13 +186,13 @@ h3 { font-size: var(--fs-h3) }
         grid-column: -1/1;
         grid-row: 2;
         text-align: right;
-        width: 100%;
+        width: 90%;
         margin-left: 2em;
     }
 
     .services {
         background-color: var(--clr-dark);
-        color: var(--clr-light);
+        color: var(--clr-white);
         text-align: center;
     }
 }
