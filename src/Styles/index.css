@@ -5,6 +5,8 @@ body,
 html {
     margin: 0;
     padding: 0;
+    z-index: 1;
+    overflow: hidden;
 }
 
 #root {
@@ -16,4 +18,28 @@ html {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: 'Comfortaa', cursive;
+
+    background-image:
+    radial-gradient(white, rgba(255,255,255, .4) 2px, transparent 10px),
+    radial-gradient(white, rgba(255,255,255, .1) 1px, transparent 5px),
+    radial-gradient(white, rgba(255,255,255, .1) 2px, transparent 10px),
+    radial-gradient(rgba(255,255,255,.9), rgba(255,255,255,.2) 4px, transparent 2px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
+
+.bg-lines {
+    z-index: -1;
+}
+
+.bg-lines::before,
+.bg-lines::after {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 1.75rem;
+  top: 75%;
+  background-image: linear-gradient(to bottom, #DC143C, #FFB81C);
+  transform: translateX(-5rem) rotate(-8deg);
+}
+  

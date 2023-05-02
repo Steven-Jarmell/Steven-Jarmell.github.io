@@ -1,4 +1,53 @@
 .MainContent__container {
     height: 100%;
+    max-width: 100vw;
+    min-height: 0;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 5rem;
+    gap: 2rem;
+}
+
+.MainContent__info {
+    height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.MainContent__info-pitt {
+    background: linear-gradient(to right, #003594, #FFB81C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.MainContent__picture-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainContent__picture {
+    max-height: 90%;
+    width: auto;
+    border-radius: 1rem;
+    border: 4px solid black;
+}
+
+.MainContent__info-project-link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
 }
