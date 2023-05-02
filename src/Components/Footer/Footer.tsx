@@ -1,6 +1,10 @@
+import '../../Styles/Footer.css'
+
 const Footer = () => {
     return (
-        <p>Made with ❤️</p>
+        <div className="footer__container">
+            <p>Made with ❤️</p>
+        </div>
     )
 }
 

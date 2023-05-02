@@ -1,6 +1,10 @@
+import '../Styles/MainContent.css';
+
 const MainContent = () => {
     return (
-        <h1>Main Content</h1>
+        <div className="MainContent__container">
+            <h1>Main Content</h1>
+        </div>
     )
 }
 
