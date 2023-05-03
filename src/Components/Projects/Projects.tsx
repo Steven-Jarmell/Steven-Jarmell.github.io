@@ -17,8 +17,14 @@ const BeefinDescription: string =
     "Collaborative project which created a full-stack social media workout app, leveraging a microservice backend architecture based on Java Spring Boot. We seamlessly connected the backend to the frontend using RESTful APIs and Json Web Tokens, resulting in a robust, secure, and scalable application.";
 const WordleDescription: string =
     "Created a clone of the popular game 'Wordle' while learning React and TypeScript. In addition to the core game mechanics, I added a feature to allow for multiple games to be played daily, enhancing the user experience.";
-const RedditScraperDescription: string = 
-    ""
+const RedditScraperDescription: string =
+    "Developed a program that utilizes web scraping to extract data from r/wallstreetbets, a popular subreddit on Reddit. The program processes the comments and identifies the most frequently mentioned stock tickers.";
+const PittsburghNeighborhoodDescription =
+    "Collaborative project that employs advanced data analysis techniques to rank neighborhoods in Pittsburgh based on various regional parameters. We leveraged diverse datasets, including fire data, restaurant inspections, and asbestos permits/removals, to generate insights and identify patterns.";
+const BigBensDescription =
+    "As part of The Odin Project's curriculum, I created an imaginary BBQ restaurant website using JavaScript DOM manipulation. Through the use of DOM manipulation, I was able to dynamically create and update page elements, providing a seamless user experience.";
+const BeSocialDescription =
+    "Collaborative class project for Database Management Systems at the University of Pittsburgh. We implemented a database for a social media application using PostgreSQL and used JDBC to connect to it and build a CLI program";
 
 const Projects = () => {
     return (
@@ -69,14 +75,40 @@ const Projects = () => {
                 />
 
                 {/* Reddit Scraper */}
+                <Project
+                    imageSrc={Reddit_Scraper}
+                    name="Reddit Web Scraper"
+                    description={RedditScraperDescription}
+                    keywords={[
+                        "Python",
+                        "Selenium",
+                        "Pandas",
+                        "NumPy",
+                        "Personal Project",
+                    ]}
+                    link="https://github.com/Steven-Jarmell/RedditScraper"
+                />
 
-                {/* Pittsburghs Best Neighborhood */}
-
-                {/* CSC Hacks Project */}
+                {/* Pittsburgh's Best Neighborhood */}
+                <Project
+                    imageSrc={CS10_Map}
+                    name="Pittsburgh's Best Neighborhood"
+                    description={PittsburghNeighborhoodDescription}
+                    keywords={["Python", "Pandas", "Class Project"]}
+                    link="https://github.com/Steven-Jarmell/CS0010-FinalProject"
+                />
 
                 {/* Big Bens BBQ */}
+                <Project
+                    imageSrc={Big_Bens}
+                    name="Big Ben's BBQ"
+                    description={BigBensDescription}
+                    keywords={["JavaScript", "Webpack", "Personal Project"]}
+                    link="https://github.com/Steven-Jarmell/restaurant-page"
+                />
 
                 {/* BeSocial */}
+                <Project imageSrc={BeSocial} name="BeSocial" description={BeSocialDescription} keywords={["PostgreSQL", "Java", "JDBC", "Class Project"]} />
 
                 {/* Malloc */}
 

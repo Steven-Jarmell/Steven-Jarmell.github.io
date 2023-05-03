@@ -20,7 +20,7 @@ const Project = ({ imageSrc, name, description, keywords, link }: Props) => {
                 <div className="project__link-container">
                 {link ? (
                     <a target="_blank" href={link} className="project__link">
-                        Link to Github
+                        Link to GitHub
                     </a>
                 ) : (
                     <p className="project__link">Code Available Upon Request</p>
