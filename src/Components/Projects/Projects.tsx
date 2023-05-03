@@ -11,13 +11,15 @@ import Wordle from "../../assets/wordle.jpg";
 import Wiki_Bot from "../../assets/wiki-bot.jpg";
 import BeSocial from "../../assets/besocial.jpg"
 
+const CSCWebsiteDescription = "Designed and implemented a proof-of-concept website to replace the original CSC Internship Repository. Allows users to sign in with GitHub OAuth, add new jobs, as well as filter existing jobs. Jobs that are added get sent to an admin only dashboard where they are reviewed before being published.";
 
 const Projects = () => {
     return (
         <div className="projects__element-container">
+
             <div className="projects__container">
                 {/* CSC Internship Repo */}
-                <Project imageSrc={CSC_Internship_Repo} name="CSC Internship Website" description="Test" keywords={["TypeScript", "React"]}/>
+                <Project imageSrc={CSC_Internship_Repo} name="CSC Internship Website" description={CSCWebsiteDescription} keywords={["TypeScript", "React", "Express", "Node", "MongoDB"]} link="https://github.com/Steven-Jarmell/CSC-Internships"/>
                 {/* Beefin */}
 
                 {/* Wordle Clone */}
