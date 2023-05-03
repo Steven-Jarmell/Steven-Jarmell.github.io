@@ -1,4 +1,9 @@
 .projects__element-container {
-    height: 100%;
     padding: 4rem 9rem;
+}
+
+.projects__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
 }
