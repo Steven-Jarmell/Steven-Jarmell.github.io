@@ -3,11 +3,13 @@ import "../../Styles/Header.css";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="header__container">
             <nav className="header__router-nav">
-                <p>Home</p>
-                <p>Projects</p>
+                <p onClick={() => navigate("/")} className="header__router-link">Home</p>
+                <p onClick={() => navigate("/projects")} className="header__router-link">Projects</p>
             </nav>
             <nav className="header__social-nav">
                 <a className="header__nav-link" target="_blank" href="https://github.com/Steven-Jarmell">

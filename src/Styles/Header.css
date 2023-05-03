@@ -29,6 +29,12 @@
     transition: transform 0.2s ease-in-out;
 }
 
-.header__nav-link:hover {
+.header__router-link:hover {
+    transition: transform 0.2s ease-in-out;
+}
+
+.header__nav-link:hover,
+.header__router-link:hover {
+    cursor: pointer;
     transform: scale(1.2);
 }

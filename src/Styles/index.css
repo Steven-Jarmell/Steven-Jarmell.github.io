@@ -6,7 +6,10 @@ html {
     margin: 0;
     padding: 0;
     z-index: 1;
-    overflow: hidden;
+}
+
+body, html {
+    overflow-x: hidden;
 }
 
 #root {
@@ -40,6 +43,6 @@ html {
   height: 1.75rem;
   top: 75%;
   background-image: linear-gradient(to bottom, #DC143C, #FFB81C);
-  transform: translateX(-5rem) rotate(-8deg);
+  transform: translateX(-5rem) rotate(-7deg);
 }
   
