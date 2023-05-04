@@ -1,6 +1,6 @@
 import '../Styles/MainContent.css';
 import { BsArrowReturnRight } from "react-icons/bs";
-import Astronaut from '../assets/astronaut.png';
+import Astronaut from '../assets/astronaut.jpg';
 import { useNavigate } from 'react-router-dom';
 
 const MainContent = () => {
