@@ -16,11 +16,11 @@
 }
 
 .header__router-link {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .header__social-nav {
-    font-size: 4rem;
+    font-size: 3rem;
     display: flex;
     gap: 1rem;
 }

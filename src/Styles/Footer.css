@@ -1,7 +1,7 @@
 .footer__container {
     padding-bottom: 10px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 @media (max-width: 960px) {
