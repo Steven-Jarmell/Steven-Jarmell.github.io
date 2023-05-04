@@ -34,7 +34,7 @@
 
 .project__name {
     text-align: center;
-    font-size: 2.25rem;
+    font-size: 3.5rem;
     padding-bottom: 1rem;
 }
 
@@ -53,6 +53,7 @@
     width: 50%;
     padding: 0.75rem 0rem;
     border-radius: 1rem;
+    font-size: 1.75rem;
 }
 
 .project__keyword {
@@ -64,8 +65,8 @@
 }
 
 .project__description {
-    font-size: 1.2rem;
-    line-height: 1.75rem;
+    font-size: 1.75rem;
+    line-height: 2rem;
 }
 
 .project__keywords-holder {
@@ -76,7 +77,11 @@
     flex-wrap: wrap;
 }
 
-@media (max-width: 480px) {
+.project__keywords-container {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 960px) {
     .project__container {
         flex-direction: column;
     }

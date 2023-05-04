@@ -59,7 +59,7 @@ body {
     transform: translateX(-5rem) rotate(-7deg);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 960px) {
     body,
     html {
         height: 100vh;

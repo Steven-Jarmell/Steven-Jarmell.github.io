@@ -1,4 +1,11 @@
 .footer__container {
     padding-bottom: 10px;
     text-align: center;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 960px) {
+    .footer__container {
+        font-size: 1rem;
+    }
 }

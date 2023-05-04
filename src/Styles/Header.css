@@ -16,11 +16,11 @@
 }
 
 .header__router-link {
-    font-size: 1.75rem;
+    font-size: 3rem;
 }
 
 .header__social-nav {
-    font-size: 2.25rem;
+    font-size: 4rem;
     display: flex;
     gap: 1rem;
 }
@@ -56,5 +56,20 @@
 
     .header__router-link {
         font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 960px) {
+    .header__container {
+        width: 70vw;
+    }
+
+    .header__social-nav {
+        font-size: 3rem;
+        gap: .5rem;
+    }
+
+    .header__router-link {
+        font-size: 2rem;
     }
 }
