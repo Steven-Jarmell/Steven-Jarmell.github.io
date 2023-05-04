@@ -4,11 +4,11 @@ import CSC_Internship_Repo from "../../assets/csc-internship-repo.jpg";
 import Beefin from "../../assets/beefin.jpg";
 import Big_Bens from "../../assets/big-bens.jpg";
 import CS10_Map from "../../assets/cs10-map.png";
-import Millipede from "../../assets/csc-internship-repo.jpg";
+import Millipede from "../../assets/millipede.jpg";
 import Reddit_Scraper from "../../assets/reddit-scraper.jpg";
 import Tux from "../../assets/tux.jpg";
 import Wordle from "../../assets/wordle.jpg";
-import Wiki_Bot from "../../assets/wiki-bot.jpg";
+import Wiki_Bot from "../../assets/wikipedia-logo.jpg";
 import BeSocial from "../../assets/besocial.jpg";
 
 const CSCWebsiteDescription: string =
@@ -19,12 +19,18 @@ const WordleDescription: string =
     "Created a clone of the popular game 'Wordle' while learning React and TypeScript. In addition to the core game mechanics, I added a feature to allow for multiple games to be played daily, enhancing the user experience.";
 const RedditScraperDescription: string =
     "Developed a program that utilizes web scraping to extract data from r/wallstreetbets, a popular subreddit on Reddit. The program processes the comments and identifies the most frequently mentioned stock tickers.";
-const PittsburghNeighborhoodDescription =
+const PittsburghNeighborhoodDescription: string =
     "Collaborative project that employs advanced data analysis techniques to rank neighborhoods in Pittsburgh based on various regional parameters. We leveraged diverse datasets, including fire data, restaurant inspections, and asbestos permits/removals, to generate insights and identify patterns.";
-const BigBensDescription =
+const BigBensDescription: string =
     "As part of The Odin Project's curriculum, I created an imaginary BBQ restaurant website using JavaScript DOM manipulation. Through the use of DOM manipulation, I was able to dynamically create and update page elements, providing a seamless user experience.";
-const BeSocialDescription =
+const BeSocialDescription: string =
     "Collaborative class project for Database Management Systems at the University of Pittsburgh. We implemented a database for a social media application using PostgreSQL and used JDBC to connect to it and build a CLI program";
+const MillipedeDescription: string =
+    "As part of my Computer Architecture and Assembly Language (CS447) course, we designed and programmed a version of the popular game 'Millipede' using a modified MIPS assembly language. To enhance the organization of the code, we implemented a Model-View-Controller (MVC) design pattern.";
+const FileSystemDescription: string =
+    "Using a modified version of Debian Linux, alongside FUSE, a Linux kernel extension, created a user space program to implement a file system. Implemented syscalls for mkdir, rmdir, mknod, read, write, and more.";
+const WikiDescription: string =
+    "Created a Discord bot that utilizes the Wikipedia API to enable users to obtain a summary of any article they search for. Additionally, the bot features a language switcher that allows users to choose their preferred language, as well as a feature that retrieves a random Wikipedia article.";
 
 const Projects = () => {
     return (
@@ -108,15 +114,37 @@ const Projects = () => {
                 />
 
                 {/* BeSocial */}
-                <Project imageSrc={BeSocial} name="BeSocial" description={BeSocialDescription} keywords={["PostgreSQL", "Java", "JDBC", "Class Project"]} />
-
-                {/* Malloc */}
+                <Project
+                    imageSrc={BeSocial}
+                    name="BeSocial"
+                    description={BeSocialDescription}
+                    keywords={["PostgreSQL", "Java", "JDBC", "Class Project"]}
+                />
 
                 {/* Millipede */}
+                <Project
+                    imageSrc={Millipede}
+                    name="Millipede"
+                    description={MillipedeDescription}
+                    keywords={["MIPS Assembly", "Class Project"]}
+                />
 
                 {/* File System */}
+                <Project
+                    imageSrc={Tux}
+                    name="File System"
+                    description={FileSystemDescription}
+                    keywords={["C", "Linux", "Class Project"]}
+                />
 
                 {/* Wikipedia Bot */}
+                <Project
+                    imageSrc={Wiki_Bot}
+                    name="Wikipedia Discord Bot"
+                    description={WikiDescription}
+                    keywords={["Python", "API", "Personal Project"]}
+                    link="https://github.com/Steven-Jarmell/Wikipedia-Bot"
+                />
             </div>
         </div>
     );

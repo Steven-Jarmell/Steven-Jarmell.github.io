@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
 *,
 body,
@@ -6,34 +6,41 @@ html {
     margin: 0;
     padding: 0;
     z-index: 1;
+    overflow: none;
 }
 
-body, html {
+body,
+html {
     overflow-x: hidden;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 #root {
-    height: 100%;
+    height: 100vh;
 }
 
 body {
-    height: 100%;
-    width: 100%;
     --background-color: #121212;
     --text-color: white;
 
     background-color: var(--background-color);
     color: var(--text-color);
-    font-family: 'Comfortaa', cursive;
+    font-family: "Comfortaa", cursive;
 
-    background-image:
-    radial-gradient(white, rgba(255,255,255, .4) 2px, transparent 10px),
-    radial-gradient(white, rgba(255,255,255, .1) 1px, transparent 5px),
-    radial-gradient(white, rgba(255,255,255, .1) 2px, transparent 10px),
-    radial-gradient(rgba(255,255,255,.9), rgba(255,255,255,.2) 4px, transparent 2px);
-    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+    background-image: radial-gradient(
+            white,
+            rgba(255, 255, 255, 0.4) 2px,
+            transparent 10px
+        ),
+        radial-gradient(white, rgba(255, 255, 255, 0.1) 1px, transparent 5px),
+        radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 10px),
+        radial-gradient(
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.2) 4px,
+            transparent 2px
+        );
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
@@ -43,12 +50,25 @@ body {
 
 .bg-lines::before,
 .bg-lines::after {
-  content: "";
-  position: absolute;
-  width: 150%;
-  height: 1.75rem;
-  top: 75%;
-  background-image: linear-gradient(to bottom, #DC143C, #FFB81C);
-  transform: translateX(-5rem) rotate(-7deg);
+    content: "";
+    position: absolute;
+    width: 150vw;
+    height: 1.75rem;
+    top: 75vh;
+    background-image: linear-gradient(to bottom, #dc143c, #ffb81c);
+    transform: translateX(-5rem) rotate(-7deg);
 }
-  
+
+@media (max-width: 480px) {
+    body,
+    html {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .bg-lines::before,
+    .bg-lines::after {
+        width: 0vw;
+        height: 0rem;
+    }
+}
