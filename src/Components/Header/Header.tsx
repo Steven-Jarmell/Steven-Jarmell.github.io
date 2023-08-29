@@ -18,7 +18,7 @@ const Header = () => {
                 <a className="header__nav-link" target="_blank" href="https://www.linkedin.com/in/jarmell/">
                     <BsLinkedin />
                 </a>
-                <a className="header__nav-link" target="_blank" href="https://github.com/Steven-Jarmell/Resume/blob/main/Steven_Jarmell_Resume_May2023.pdf">
+                <a className="header__nav-link" target="_blank" href="https://github.com/Steven-Jarmell/Resume/blob/main/Steven_Jarmell_Resume_August_2023.pdf">
                     <BsFileEarmarkPdfFill />
                 </a>
             </nav>
