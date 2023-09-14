@@ -20,11 +20,11 @@
     flex-direction: column;
     gap: 1.5rem;
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 3.25rem;
 }
 
 .MainContent__info-pitt {
-    background: linear-gradient(to right, #003594, #FFB81C);
+    background: linear-gradient(to right, #003594, #ffb81c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -38,8 +38,8 @@
 }
 
 .MainContent__picture {
-    max-height: 85%;
-    width: auto;
+    max-width: 85%;
+    max-height: 80%;
     border-radius: 1rem;
     border: 4px solid black;
 }
@@ -51,6 +51,7 @@
     align-items: center;
     padding-top: 2rem;
     cursor: pointer;
+    font-size: 2rem;
 }
 
 @media (max-width: 480px) {
@@ -73,5 +74,18 @@
         font-weight: 500;
         width: 100%;
         flex-basis: 1;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 960px) {
+    .MainContent__picture-container {
+        display: none;
+        flex-basis: 0;
+    }
+
+    .MainContent__container {
+        padding: 1rem;
+        text-align: center;
+        margin-left: auto;
     }
 }
