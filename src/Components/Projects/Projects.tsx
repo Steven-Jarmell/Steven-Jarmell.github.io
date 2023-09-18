@@ -10,6 +10,7 @@ import Tux from "../../assets/tux.jpg";
 import Wordle from "../../assets/wordle.jpg";
 import Wiki_Bot from "../../assets/wikipedia-logo.jpg";
 import BeSocial from "../../assets/besocial.jpg";
+import MediLingo from "../../assets/medilingo.jpg"
 
 const CSCWebsiteDescription: string =
     "Designed and implemented a proof-of-concept website to replace the original CSC Internship Repository. Allows users to sign in with GitHub OAuth, add new jobs, as well as filter existing jobs. All newly added job postings undergo a rigorous review process by an admin before being published. The platform offers a more efficient, streamlined way to connect aspiring interns with potential employers.";
@@ -31,6 +32,8 @@ const FileSystemDescription: string =
     "Using a modified version of Debian Linux, alongside FUSE, a Linux kernel extension, created a user space program to implement a file system. Implemented syscalls for mkdir, rmdir, mknod, read, write, and more.";
 const WikiDescription: string =
     "Created a Discord bot that utilizes the Wikipedia API to enable users to obtain a summary of any article they search for. Additionally, the bot features a language switcher that allows users to choose their preferred language, as well as a feature that retrieves a random Wikipedia article.";
+const MediLingoDescription: string = 
+    "Project for the Pitt Challenge 2023 Hackathon. Built a full-stack web application using the MERN Stack and TypeScript that helps users learn about specific medical conditions in an easily digestible format. Won two tracks: Health Literacy and Best Use of MongoDB."
 
 const Projects = () => {
     return (
@@ -52,6 +55,15 @@ const Projects = () => {
                     ]}
                     link="https://github.com/Steven-Jarmell/CSC-Internships"
                 />
+
+                {/* MediLingo */}
+                <Project 
+                    imageSrc={MediLingo}
+                    name="MediLingo"
+                    description={MediLingoDescription}
+                    keywords={["MongoDB", "Express", "React", "Node", "TypeScript", "Clerk", "Hackathon Project"]}
+                    link="https://github.com/Steven-Jarmell/MediLingo"
+                    />
 
                 {/* Beefin */}
                 <Project
