@@ -7,10 +7,7 @@ const Header = () => {
 
     return (
         <div className="header__container">
-            <nav className="header__router-nav">
-                <p onClick={() => navigate("/")} className="header__router-link">Home</p>
-                <p onClick={() => navigate("/projects")} className="header__router-link">Projects</p>
-            </nav>
+            <p className="header__SJ">SJ</p>
             <nav className="header__social-nav">
                 <a className="header__nav-link" target="_blank" href="https://github.com/Steven-Jarmell">
                     <BsGithub/>

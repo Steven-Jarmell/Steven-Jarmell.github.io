@@ -1,12 +1,8 @@
 .MainContent__container {
-    height: 100%;
     max-width: 100vw;
     min-height: 0;
     min-width: 0;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
     padding: 2rem 5rem;
     gap: 2rem;
 }
@@ -50,8 +46,12 @@
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
-    cursor: pointer;
     font-size: 2rem;
+}
+
+.MainContent__wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 480px) {
