@@ -47,18 +47,6 @@ body {
 .bg-lines {
     z-index: -1;
 }
-
-.bg-lines::before,
-.bg-lines::after {
-    content: "";
-    position: absolute;
-    width: 150vw;
-    height: 1.75rem;
-    top: 75vh;
-    background-image: linear-gradient(to bottom, #dc143c, #ffb81c);
-    transform: translateX(-5rem) rotate(-7deg);
-}
-
 @media (max-width: 960px) {
     body,
     html {
