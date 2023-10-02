@@ -24,7 +24,7 @@ const ParticlesComponent = () => {
                         value: .7,
                     },
                     size: {
-                        value: 2,
+                        value: { min: 1, max: 3 },
                     },
                     move: {
                         angle: {
@@ -33,7 +33,6 @@ const ParticlesComponent = () => {
                         },
                         enable: true,
                         speed: 2,
-                        direction: "random",
                     },
                 },
             }}
