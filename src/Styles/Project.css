@@ -13,6 +13,12 @@
     padding: 0.5rem 3rem;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 0.5rem;
+    transform: translateX(150%);
+    transition: transform .8s ease;
+}
+
+.project__info-container.animate {
+    transform: translateX(0);
 }
 
 .project__image-container {
@@ -22,6 +28,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateX(-120%);
+    transition: transform 1s ease;
+}
+
+.project__image-container.animate {
+    transform: translateX(0);
 }
 
 .project__image {
