@@ -11,6 +11,8 @@ import Wordle from "../../assets/wordle.jpg";
 import Wiki_Bot from "../../assets/wikipedia-logo.jpg";
 import BeSocial from "../../assets/besocial.jpg";
 import MediLingo from "../../assets/medilingo.jpg";
+import Pitt_CS_Wiki from "../../assets/pitt-cs-wiki.jpg";
+import Pitt_Gym_Tracker from "../../assets/pitt-gym-tracker.jpg";
 
 const CSCWebsiteDescription: string =
     "Designed and implemented a proof-of-concept website to replace the original CSC Internship Repository. Allows users to sign in with GitHub OAuth, add new jobs, as well as filter existing jobs. All newly added job postings undergo a rigorous review process by an admin before being published. The platform offers a more efficient, streamlined way to connect aspiring interns with potential employers.";
@@ -34,11 +36,35 @@ const WikiDescription: string =
     "Created a Discord bot that utilizes the Wikipedia API to enable users to obtain a summary of any article they search for. Additionally, the bot features a language switcher that allows users to choose their preferred language, as well as a feature that retrieves a random Wikipedia article.";
 const MediLingoDescription: string =
     "Project for the Pitt Challenge 2023 Hackathon. Built a full-stack web application using the MERN Stack and TypeScript that helps users learn about specific medical conditions in an easily digestible format. Won two tracks: Health Literacy and Best Use of MongoDB.";
+const PittCSWikiDescrption: string =
+    "Refactored the old Pitt Computer Science Club Wikipedia from Gatsby to Next.js. The original website was difficult to maintain and very flakey. I aimed to rewrite the site in Next.js in order to fix these problems and make it easier for future maintainers to work on.";
+const PittGymTrackerDescription: string =
+    "Created a website to display the number of people at Pitt's various recreational facilities. I leveraged AWS Lambda, AWS Event Bridge, AWS ECR, Docker, and GitHub actions to create a CI/CD pipeline for the scraper I implemented with Python and BeautifulSoup. For the Frontend, I used Next.js and deployed the site using Vercel."
+
 
 const Projects = () => {
     return (
         <div className="projects__element-container">
             <div className="projects__container">
+                {/* Pitt Gym Tracker*/}
+                <Project
+                    imageSrc={Pitt_Gym_Tracker}
+                    name="Pitt Gym Tracker"
+                    description={PittGymTrackerDescription}
+                    keywords={[
+                        "TypeScript",
+                        "Next.js",
+                        "AWS Lambda",
+                        "AWS Event Bridge",
+                        "AWS ECR",
+                        "Docker",
+                        "Python",
+                        "GitHub Actions",
+                        "Personal Project",
+                    ]}
+                    link="https://github.com/Steven-Jarmell/Pitt-Gym-Tracker"
+                />
+
                 {/* CSC Internship Repo */}
                 <Project
                     imageSrc={CSC_Internship_Repo}
@@ -54,6 +80,19 @@ const Projects = () => {
                         "Personal Project",
                     ]}
                     link="https://github.com/Steven-Jarmell/CSC-Internships"
+                />
+
+                {/* Pitt CS Wiki */}
+                <Project
+                    imageSrc={Pitt_CS_Wiki}
+                    name="Pitt Computer Science Wiki"
+                    description={PittCSWikiDescrption}
+                    keywords={[
+                        "TypeScript",
+                        "Next.js",
+                        "Personal Project",
+                    ]}
+                    link="https://github.com/Steven-Jarmell/pittcswiki-next"
                 />
 
                 {/* MediLingo */}
