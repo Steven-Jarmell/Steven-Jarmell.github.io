@@ -1,10 +1,7 @@
 import { BsFileEarmarkPdfFill, BsGithub, BsLinkedin } from "react-icons/bs";
 import "../../Styles/Header.css";
-import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-    const navigate = useNavigate();
-
     return (
         <div className="header__container">
             <p className="header__SJ">SJ</p>

@@ -1,11 +1,9 @@
 import "../Styles/MainContent.css";
-import { BsArrow90DegDown, BsArrowDown } from "react-icons/bs";
+import { BsArrowDown } from "react-icons/bs";
 import Astronaut from "../assets/astronaut.jpg";
-import { useNavigate } from "react-router-dom";
 import Projects from "./Projects/Projects";
 
 const MainContent = () => {
-    const navigate = useNavigate();
 
     return (
         <div className="MainContent__wrapper">
