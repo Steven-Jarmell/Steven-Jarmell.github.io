@@ -4,25 +4,23 @@ import Astronaut from "../assets/astronaut.jpg";
 import Projects from "./Projects/Projects";
 
 const MainContent = () => {
-
     return (
         <div className="MainContent__wrapper">
             <div className="MainContent__container">
                 <div className="MainContent__info">
                     <p>Hey,</p>
                     <p>
-                        My name is Steven Jarmell. I'm a {" "}
+                        My name is Steven Jarmell. I'm a{" "}
                         <b>
                             <span className="MainContent__info-pitt">
                                 University of Pittsburgh
                             </span>
                         </b>{" "}
-                        graduate and a <b>Software Engineer at Amazon Web Services</b>.
+                        graduate and a{" "}
+                        <b>Software Engineer at Amazon Web Services</b>.
                     </p>
 
-                    <div
-                        className="MainContent__info-project-link"
-                    >
+                    <div className="MainContent__info-project-link">
                         <p>Check out my projects below</p>
                         <BsArrowDown />
                     </div>

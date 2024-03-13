@@ -39,8 +39,7 @@ const MediLingoDescription: string =
 const PittCSWikiDescrption: string =
     "Refactored the old Pitt Computer Science Club Wikipedia from Gatsby to Next.js. The original website was difficult to maintain and very flakey. I aimed to rewrite the site in Next.js in order to fix these problems and make it easier for future maintainers to work on.";
 const PittGymTrackerDescription: string =
-    "Created a website to display the number of people at Pitt's various recreational facilities. I leveraged AWS Lambda, AWS Event Bridge, AWS ECR, Docker, and GitHub actions to create a CI/CD pipeline for the scraper I implemented with Python and BeautifulSoup. For the Frontend, I used Next.js and deployed the site using Vercel."
-
+    "Created a website to display the number of people at Pitt's various recreational facilities. I leveraged AWS Lambda, AWS Event Bridge, AWS ECR, Docker, and GitHub actions to create a CI/CD pipeline for the scraper I implemented with Python and BeautifulSoup. For the Frontend, I used Next.js and deployed the site using Vercel.";
 
 const Projects = () => {
     return (
@@ -87,11 +86,7 @@ const Projects = () => {
                     imageSrc={Pitt_CS_Wiki}
                     name="Pitt Computer Science Wiki"
                     description={PittCSWikiDescrption}
-                    keywords={[
-                        "TypeScript",
-                        "Next.js",
-                        "Personal Project",
-                    ]}
+                    keywords={["TypeScript", "Next.js", "Personal Project"]}
                     link="https://github.com/Steven-Jarmell/pittcswiki-next"
                 />
 

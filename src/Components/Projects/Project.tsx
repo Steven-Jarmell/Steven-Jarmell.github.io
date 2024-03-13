@@ -38,10 +38,14 @@ const Project = ({ imageSrc, name, description, keywords, link }: Props) => {
     return (
         <div ref={elementRef}>
             <div className={"project__container"}>
-                <div className={`project__image-container ${isAnimated ? "animate" : ""}`}>
+                <div
+                    className={`project__image-container ${isAnimated ? "animate" : ""}`}
+                >
                     <img src={imageSrc} className="project__image" />
                 </div>
-                <div className={`project__info-container ${isAnimated ? "animate" : ""}`}>
+                <div
+                    className={`project__info-container ${isAnimated ? "animate" : ""}`}
+                >
                     <p className="project__name">{name}</p>
                     <p className="project__description">{description}</p>
                     <div className="project__link-container">

@@ -21,7 +21,7 @@ const ParticlesComponent = () => {
                         type: "circle",
                     },
                     opacity: {
-                        value: .7,
+                        value: 0.7,
                     },
                     size: {
                         value: { min: 1, max: 3 },

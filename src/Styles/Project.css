@@ -14,7 +14,7 @@
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 0.5rem;
     transform: translateX(150%);
-    transition: transform .8s ease;
+    transition: transform 0.8s ease;
 }
 
 .project__info-container.animate {
