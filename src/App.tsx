@@ -40,13 +40,23 @@ const projects = [
       "Displays live occupancy at Pitt's rec facilities. Built a scraper pipeline with AWS Lambda, EventBridge, ECR, Docker, and GitHub Actions. Frontend in Next.js, deployed on Vercel.",
     tech: ["Next.js", "Python", "AWS", "Docker"],
     link: "https://github.com/Steven-Jarmell/Pitt-Gym-Tracker",
+    liveLink: "https://pittgymtracker.vercel.app",
   },
   {
-    name: "Pitt Computer Science Club Internship Website",
+    name: "Ladle",
     description:
-      "Replacement for the Pitt CSC internship repository. GitHub OAuth login, job submissions with an admin review queue, and tag-based filtering.",
-    tech: ["React", "TypeScript", "Express", "MongoDB"],
-    link: "https://github.com/Steven-Jarmell/CSC-Internships",
+      "A recipe sharing platform with a Rust/Axum backend and a Next.js frontend, backed by Supabase. Features user authentication, recipe creation, and browsing.",
+    tech: ["Next.js", "TypeScript", "Rust", "Supabase"],
+    link: "https://github.com/Steven-Jarmell/Ladle",
+    liveLink: "https://ladle-seven.vercel.app",
+  },
+  {
+    name: "Pitt CS Wiki",
+    description:
+      "Migrated the Pitt CSC Wikipedia from Gatsby to Next.js to fix long-standing stability issues and lower the barrier for future contributors.",
+    tech: ["Next.js", "TypeScript"],
+    link: "https://github.com/Steven-Jarmell/pittcswiki-next",
+    liveLink: "https://pittcs.wiki",
   },
   {
     name: "MediLingo",
@@ -55,13 +65,6 @@ const projects = [
     tech: ["React", "TypeScript", "Node", "MongoDB"],
     link: "https://github.com/Steven-Jarmell/MediLingo",
   },
-  {
-    name: "Pitt CS Wiki",
-    description:
-      "Migrated the Pitt CSC Wikipedia from Gatsby to Next.js to fix long-standing stability issues and lower the barrier for future contributors.",
-    tech: ["Next.js", "TypeScript"],
-    link: "https://github.com/Steven-Jarmell/pittcswiki-next",
-  }
 ];
 
 const App = () => {
@@ -154,14 +157,26 @@ const App = () => {
           {projects.map((project) => (
             <li key={project.name}>
               <div className="project-header">
-                <a
-                  className="project-name"
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {project.name}
-                </a>
+                <div className="project-name-links">
+                  <a
+                    className="project-name"
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {project.name}
+                  </a>
+                  {project.liveLink && (
+                    <a
+                      className="project-live-link"
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      ↗ Live
+                    </a>
+                  )}
+                </div>
                 <span className="project-tech">{project.tech.join(" · ")}</span>
               </div>
               <p className="project-desc">{project.description}</p>

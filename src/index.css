@@ -212,6 +212,12 @@ main {
   margin-bottom: 6px;
 }
 
+.project-name-links {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
 .project-name {
   font-family: var(--font-serif);
   font-size: 1rem;
@@ -224,6 +230,20 @@ main {
 }
 
 .project-name:hover {
+  border-color: var(--link-underline-hover);
+}
+
+.project-live-link {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--link-underline);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.project-live-link:hover {
+  color: var(--text);
   border-color: var(--link-underline-hover);
 }
 
