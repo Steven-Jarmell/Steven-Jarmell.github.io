@@ -1,3 +1,10 @@
+import { lazy, Suspense } from "react";
+import { useVersion } from "./VersionContext";
+import VersionPicker from "./VersionPicker";
+
+const AppV1 = lazy(() => import("./versions/v1/AppV1"));
+const AppV2 = lazy(() => import("./versions/v2/AppV2"));
+
 const experience = [
   {
     company: "Amazon",
@@ -67,7 +74,9 @@ const projects = [
   },
 ];
 
-const App = () => {
+// ── V3 (current) ──────────────────────────────────────────────────────────────
+
+const AppV3 = () => {
   return (
     <main>
       {/* Intro */}
@@ -186,9 +195,42 @@ const App = () => {
       </section>
 
       {/* Footer */}
-      <footer>Steven Jarmell · {new Date().getFullYear()}</footer>
+      <footer>
+        <span>Steven Jarmell · {new Date().getFullYear()}</span>
+        <VersionPicker />
+      </footer>
     </main>
   );
+};
+
+// ── Root switcher ─────────────────────────────────────────────────────────────
+
+const App = () => {
+  const { version } = useVersion();
+
+  if (version === "v1") {
+    return (
+      <Suspense fallback={null}>
+        <AppV1 />
+        <footer className="v1-version-overlay">
+          <VersionPicker />
+        </footer>
+      </Suspense>
+    );
+  }
+
+  if (version === "v2") {
+    return (
+      <Suspense fallback={null}>
+        <AppV2 />
+        <footer className="v2-version-overlay">
+          <VersionPicker />
+        </footer>
+      </Suspense>
+    );
+  }
+
+  return <AppV3 />;
 };
 
 export default App;
