@@ -118,9 +118,7 @@ const AppV3 = () => {
             LinkedIn
           </a>
           <a
-            href="https://github.com/Steven-Jarmell/Resume/blob/main/Steven_Jarmell_Resume.pdf"
-            target="_blank"
-            rel="noreferrer"
+            href="/resume/"
           >
             Resume
           </a>

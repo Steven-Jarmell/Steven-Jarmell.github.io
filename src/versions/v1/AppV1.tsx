@@ -16,7 +16,7 @@ const AppV1 = () => {
             {/* Navbar */}
             <nav className="header-container">
                 <a href="https://github.com/Steven-Jarmell" target="_blank" rel="noreferrer" className="link">GitHub</a>
-                <a href="https://github.com/Steven-Jarmell/Resume/blob/main/Steven_Jarmell_Resume.pdf" target="_blank" rel="noreferrer" className="link">Resume</a>
+                <a href="/resume/" className="link">Resume</a>
                 <a href="https://www.linkedin.com/in/Jarmell" target="_blank" rel="noreferrer" className="link">LinkedIn</a>
                 <a href="mailto:jarmellsteve@yahoo.com" target="_blank" rel="noreferrer" className="link">Email</a>
             </nav>

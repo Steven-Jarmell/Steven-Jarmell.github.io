@@ -233,7 +233,7 @@ const AppV2 = () => {
                         <a className="header__nav-link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jarmell/">
                             <BsLinkedin />
                         </a>
-                        <a className="header__nav-link" target="_blank" rel="noreferrer" href="https://github.com/Steven-Jarmell/Resume/blob/main/Steven_Jarmell_Resume.pdf">
+                        <a className="header__nav-link" aria-label="Resume" href="/resume/">
                             <BsFileEarmarkPdfFill />
                         </a>
                     </nav>

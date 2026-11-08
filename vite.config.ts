@@ -5,4 +5,5 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig({
     base: "/",
     plugins: [react()],
+    build: { rollupOptions: { input: ["index.html", "resume/index.html"] } },
 });
